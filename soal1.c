@@ -40,6 +40,9 @@ void recover(int arr[], int n){
 }
 
 
+
+
+
 int main(){
     int N;
     int data[100000];
@@ -55,8 +58,11 @@ int main(){
     printf("RECOVERED ");
     for(int i = 0; i<N;i++){
         sum += data[i];
-        printf("%d ", data[i]);
-        if(i == N-1){
+        printf("%d", data[i]);
+        if(i<N-1){
+            printf(" ");
+        }
+        else if(i == N-1){
             printf("\n");
         }
     }
